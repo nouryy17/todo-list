@@ -1,0 +1,61 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-between;
+}
+.gemes{
+    width: 700px;
+    border: 4px solid black;
+    height: 500px;
+    margin: 8.5px  auto;
+    background-color: red;
+    overflow: hidden;
+    position: relative;
+}
+.che{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 400px;
+    left: 150px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 1000;
+}
+.bloc{
+    width: 100%;
+    height: 20px;
+    background-color: black;
+    position: absolute;
+    animation: movDown 5S linear forwards;
+}
+.foooter{
+    background-color: rgb(169, 244, 254);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 0;
+    text-align: center;
+}
+.hole{
+    width: 70px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    animation: movDown 5s linear forwards;
+
+}
+@keyframes movDown {
+    0%{
+      top: 0;
+    }
+    100%{
+       top: 100%;
+       display: none;
+       visibility: hidden;
+    }
+}
